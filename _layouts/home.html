@@ -1,0 +1,64 @@
+---
+layout: base
+---
+
+<div class="container px-4">
+    <div class="row gx-5">
+        <div class="col-3 justify-content-center">
+            <img src="/assets/img/reed.png" class="rounded-circle p-4 mb-4 mt-5" alt="reed_bratches_headshot.png">
+            <h2 class="mb-3 text-center lh-base">Reed WR Bratches, PhD</h2>
+            <h5 class="mb-3 text-center lh-base text-muted">Postdoctoral Fellow in the Division of Nursing</h5>
+            <h5 class="text-center lh-base text-muted">University of Alabama at Birmingham (UAB)</h5>
+            <div class="text-center text-primary mt-4">
+                <a href="mailto:{{ site.email }}" class="text-decoration-none">
+                    <i class="fa-solid fa-envelope fa-2xl"></i>
+                </a>
+                <a href="https://twitter.com/{{ site.twitter_username }}" class="text-decoration-none ms-2">
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </a>
+                <a href="https://github.com/{{ site.github_username }}" class="text-decoration-none ms-2">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user={{ site.googlescholar_username }}" class="text-decoration-none ms-2">
+                    <i class="fa-solid fa-user-graduate fa-2xl"></i>
+                </a>
+                <a href="https://www.researchgate.net/scientific-contributions/{{ site.researchgate_username }}" class="text-decoration-none ms-2">
+                    <i class="fa-brands fa-researchgate fa-2xl"></i>
+                </a>
+                <a href="https://orcid.org/{{ site.orcid_username }}" class="text-decoration-none ms-2">
+                    <i class="fa-brands fa-orcid fa-2xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-8 fs-5 lh-lg">
+            <h1 class="mb-5 mt-5">Biography</h1>
+            {{ content }}
+        </div>
+    </div> <!-- end biography row-->
+
+    <!-- determine how to display posts here when applicable -->
+    {% assign posts = site.posts %}
+    {%- if posts.size > 0 -%}
+        {%- if page.list_title -%}
+        <h2 class="post-list-heading">{{ page.list_title }}</h2>
+        {%- endif -%}
+        <ul class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in posts -%}
+        <li>
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+        </li>
+        {%- endfor -%}
+        </ul>
+    {%- endif -%}
+
+</div>

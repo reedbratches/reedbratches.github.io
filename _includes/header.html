@@ -1,0 +1,17 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="site-title navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="{{ "/" | relative_url }}">Home</a>
+                <!--<a class="nav-link" href="#publications">Publications</a>-->
+                <!--<a class="nav-link" href="#posts">Posts</a>-->
+                <a class="nav-link" href="{{ "/assets/pdfs/BRATCHES_CV_9_8.pdf" | relative_url }}" target="_blank">CV</a>
+                <!-- <a class="nav-link" href="#contact">Contact</a> -->
+            </div>
+        </div>
+    </div>
+</nav>
