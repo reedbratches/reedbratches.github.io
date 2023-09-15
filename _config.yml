@@ -20,7 +20,7 @@
 
 title: Reed WR Bratches
 title_with_suffix: Reed WR Bratches, PhD
-subtitle_1: Postdoctoral Fellow in the Division of Nursing
+subtitle_1: Postdoctoral Fellow, School of Nursing
 subtitle_2: University of Alabama at Birmingham (UAB)
 # subtitle_3:
 email: ReedB@uab.edu
@@ -28,7 +28,7 @@ email: ReedB@uab.edu
 address: 8th floor, Boshell Diabetes Building, 1808 7th Avenue South, Birmingham, Alabama 35233
 map: 33.50490036289856, -86.80231638807041
 description: >- # this means to ignore newlines until "baseurl:"
-  Reed Bratches PhD is a postdoctoral fellow in the Division of Nursing at the University of Alabama at Birmingham (UAB)
+  Reed Bratches PhD is a postdoctoral fellow in the School of Nursing at the University of Alabama at Birmingham (UAB)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rbratches
@@ -39,6 +39,18 @@ orcid_username: 0000-0001-9446-7098
 cv_pdf: /assets/pdfs/BRATCHES_CV_9_8.pdf
 profile_img: /assets/img/reed.png
 biography_title: Biography
+interests: [Family Caregivers, Persons Living with Dementia, Medication Refusals, Care-Resistant Behavior]
+education: 
+- title: "Postdoctoral Fellow, COERE"
+  detail: "University of Alabama at Birmingham"
+- title: PhD in Health Services Research, 2022
+  detail: Dartmouth College
+- title: MPH, 2019
+  detail: Dartmouth College
+- title: MALS in Cultural Studies, 2018
+  detail: Dartmouth College
+- title: BA in Government, 2013
+  detail: Franklin and Marshall College
 
 # Build settings
 theme: minima

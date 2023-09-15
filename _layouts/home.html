@@ -3,7 +3,7 @@ layout: base
 ---
 
 <div class="container px-4">
-    <div class="row gx-5">
+    <div id="about" class="row gx-5">
         <div class="col-md-3 justify-content-center">
             {%- if site.profile_img -%}
                 <img src="{{ site.profile_img }}" class="rounded-circle p-4 mb-4 mt-5">
@@ -14,13 +14,13 @@ layout: base
                 <h2 class="mb-3 text-center lh-base">{{ site.title }}</h2>
             {%- endif -%}
             {%- if site.subtitle_1 -%}
-                <h5 class="mb-3 text-center lh-base text-muted">{{ subtitle_1 }}</h5>
+                <h5 class="mb-3 text-center lh-base text-muted">{{ site.subtitle_1 }}</h5>
             {%- endif -%}
             {%- if site.subtitle_2 -%}
-                <h5 class="text-center lh-base text-muted">{{ subtitle_2 }}</h5>
+                <h5 class="text-center lh-base text-muted">{{ site.subtitle_2 }}</h5>
             {%- endif -%}
             {%- if site.subtitle_3 -%}
-                <h5 class="text-center lh-base text-muted">{{ subtitle_3 }}</h5>
+                <h5 class="text-center lh-base text-muted">{{ site.subtitle_3 }}</h5>
             {%- endif -%}
             <div class="text-center text-primary mt-4">
                 {%- if site.email -%}
@@ -57,8 +57,34 @@ layout: base
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-8 fs-5 lh-lg mt-5 mt-md-2">
-            <h1 class="mb-5 mt-5">{{ site.biography_title }}</h1>
+            <h1 class="my-5">{{ site.biography_title }}</h1>
             {{ content }}
+            <div class="row">
+            {%- if site.interests -%}
+                <div class="col-md-6">
+                    <h3 class="mt-5 mb-3">Interests</h3>
+                    <ul class="fs-6">
+                    {%- for interest in site.interests -%}
+                    <li>{{ interest }}</li>
+                    {%- endfor -%}
+                    </ul>
+                </div>
+            {%- endif -%}
+            {%- if site.education -%}
+                <div class="col-md-6">
+                    <h3 class="mt-5 mb-3">Education</h1>
+                    <ul class="fs-6 list-unstyled">
+                    {%- for education in site.education -%}
+                    <li>
+                        <i class="fa-solid fa-graduation-cap fa-xl me-3 ms-0"></i>{{ education.title }}
+                        <br>
+                        <span class="text-muted ms-5">{{ education.detail }}</span>
+                    </li>
+                    {%- endfor -%}
+                    </ul>
+                </div>
+            {%- endif -%}
+            </div>
         </div>
     </div>
 
