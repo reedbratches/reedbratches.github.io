@@ -1,23 +1,15 @@
 <footer class="site-footer h-card">
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
   
-    <div class="wrapper">
-  
-      <div class="footer-col-wrapper">
-        <div class="footer-col">
-          <!-- <p class="feed-subscribe">
-            <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-              <svg class="svg-icon orange">
-                <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-              </svg><span>Subscribe</span>
+    <div class="container px-3">
+      <div class="d-flex justify-content-between">
+          <p class="feed-subscribe">
+            <a  class="text-decoration-none" href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+                <i class="fa-solid fa-rss"></i> Subscribe
             </a>
-          </p> -->
-        </div>
-        <div class="footer-col">
-          <p>Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="https://docs.github.com/en/pages">Github Pages</a></p>
-        </div>
+          </p>
+          <p>Powered by <a class="text-decoration-none" href="http://jekyllrb.com">Jekyll</a> and <a class="text-decoration-none" href="https://docs.github.com/en/pages">Github Pages</a></p>
       </div>
-  
     </div>
   
   </footer>
