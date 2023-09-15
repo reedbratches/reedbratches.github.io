@@ -60,30 +60,110 @@ layout: base
             <h1 class="mb-5 mt-5">{{ site.biography_title }}</h1>
             {{ content }}
         </div>
-    </div> <!-- end biography row-->
+    </div>
 
-    <!-- determine how to display posts here when applicable -->
+    {% assign publications = site.publications %}
+    {%- if publications.size > 0 -%}
+    <div class="row gx-5 bg-light py-5 my-5">
+        <div class="col-md-3 justify-content-center">
+            <h1 class="mb-3 lh-base">Selected Publications</h1>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-8 fs-5 lh-lg mt-5 mt-md-2">
+            {%- if publications.list_title -%}
+            <h2 class="post-list-heading">{{ publications.list_title }}</h2>
+            {%- endif -%}
+            <ul class="post-list">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {%- for publication in publications -%}
+            <li>
+                <span class="post-meta">{{ publication.date | date: date_format }}</span>
+                <h3>
+                <a class="post-link" href="{{ publication.url | relative_url }}">
+                    {{ publication.title | escape }}
+                </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                {{ publication.excerpt }}
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+    {%- endif -%}
+
     {% assign posts = site.posts %}
     {%- if posts.size > 0 -%}
-        {%- if page.list_title -%}
-        <h2 class="post-list-heading">{{ page.list_title }}</h2>
-        {%- endif -%}
-        <ul class="post-list">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- for post in posts -%}
-        <li>
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-            </a>
-            </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
+    <div class="row gx-5 py-5 my-5">
+        <div class="col-md-3 justify-content-center">
+            <h1 class="mb-3 lh-base">Recent Posts</h1>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-8 fs-5 lh-lg mt-5 mt-md-2">
+            {%- if page.list_title -%}
+            <h2 class="post-list-heading">{{ page.list_title }}</h2>
             {%- endif -%}
-        </li>
-        {%- endfor -%}
-        </ul>
+            <ul class="post-list">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {%- for post in posts -%}
+            <li>
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+            </ul>
+        </div>
+    </div>
     {%- endif -%}
+
+    <div class="row gx-5 py-5 my-5 bg-light">
+        <div class="col-md-3 justify-content-center">
+            <h1 class="mb-3 lh-base">Contact</h1>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-8 fs-5 lh-lg mt-5 mt-md-2">
+            {%- if site.email -%}
+                <div class="my-3">
+                    <i class="fa-solid fa-envelope fa-xl me-5"></i>  <a href="mailto:{{ site.email }}" class="text-decoration-none fs-6">{{ site.email }}</a>
+                </div>
+            {%- endif -%}
+            {%- if site.phone -%}
+                <div class="my-3">
+                    <i class="fa-solid fa-phone fa-xl ms-1 me-5"></i>  {{ site.phone }}
+                </div>
+            {%- endif -%}
+            {%- if site.address -%}
+                <div class="my-3">
+                    <i class="fa-solid fa-location-dot fa-xl ms-1 me-5"></i><span class="fs-6 ms-2">{{ site.address }}</span>
+                </div>
+            {%- endif -%}
+            {%- if site.map -%}
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+                integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+                crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""></script>
+                <div id="map" class="my-5"></div>
+                <style>#map { height: 300px; }</style>
+                <script>
+                var map = L.map('map').setView([{{ site.map }}], 13);
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+                    var marker = L.marker([{{ site.map }}]).addTo(map);
+                </script>
+            {%- endif -%}
+        </div>
+    </div>
 
 </div>

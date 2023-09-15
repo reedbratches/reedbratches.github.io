@@ -23,7 +23,10 @@ title_with_suffix: Reed WR Bratches, PhD
 subtitle_1: Postdoctoral Fellow in the Division of Nursing
 subtitle_2: University of Alabama at Birmingham (UAB)
 # subtitle_3:
-email: reedb@uab.com
+email: ReedB@uab.edu
+# phone: 
+address: 8th floor, Boshell Diabetes Building, 1808 7th Avenue South, Birmingham, Alabama 35233
+map: 33.50490036289856, -86.80231638807041
 description: >- # this means to ignore newlines until "baseurl:"
   Reed Bratches PhD is a postdoctoral fellow in the Division of Nursing at the University of Alabama at Birmingham (UAB)
 baseurl: "" # the subpath of your site, e.g. /blog
