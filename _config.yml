@@ -52,6 +52,10 @@ education:
 - title: BA in Government, 2013
   detail: Franklin and Marshall College
 
+publications: true
+page_excerpts: true
+show_excerpts: true
+
 # Build settings
 theme: minima
 plugins:

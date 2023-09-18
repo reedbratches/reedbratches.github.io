@@ -88,31 +88,32 @@ layout: base
         </div>
     </div>
 
-    {% assign publications = site.publications %}
-    {%- if publications.size > 0 -%}
+    {%- if site.publications -%}
     <div class="row gx-5 bg-light py-5 my-5">
         <div class="col-md-3 justify-content-center">
             <h1 class="mb-3 lh-base">Selected Publications</h1>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-8 fs-5 lh-lg mt-5 mt-md-2">
-            {%- if publications.list_title -%}
-            <h2 class="post-list-heading">{{ publications.list_title }}</h2>
-            {%- endif -%}
-            <ul class="post-list">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            {%- for publication in publications -%}
+            <ul class="list-unstyled">
+            {% for publication in site.pages %}
+            {%- if publication.selected -%}
             <li>
-                <span class="post-meta">{{ publication.date | date: date_format }}</span>
-                <h3>
-                <a class="post-link" href="{{ publication.url | relative_url }}">
+                <h2>
+                <a class="text-decoration-none fw-bold" href="{{ publication.url | relative_url }}">
                     {{ publication.title | escape }}
                 </a>
-                </h3>
-                {%- if site.show_excerpts -%}
-                {{ publication.excerpt }}
-                {%- endif -%}
+                </h2>
+                <span class="fst-italic text-muted fs-5">{{ publication.authors }}</span>
+                <br>
+                <span class="fs-5 fw-bold text-muted">
+                {{ publication.publication }} | {{ publication.date }}</span>
+                <br>
+                <span class="fs-5">{{ publication.description }} </span><a class="text-decoration-none" href="{{ publication.url | relative_url }}">
+                    continue reading...
+                </a>
             </li>
+            {%- endif -%}
             {%- endfor -%}
             </ul>
         </div>
