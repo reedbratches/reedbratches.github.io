@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Reed WR Bratches
-title_with_suffix: Reed WR Bratches, PhD
+title: Reed W. R. Bratches
+title_with_suffix: Reed W. R. Bratches, PhD
 subtitle_1: Postdoctoral Fellow, School of Nursing
 subtitle_2: University of Alabama at Birmingham (UAB)
 # subtitle_3:
@@ -28,7 +28,7 @@ email: ReedB@uab.edu
 address: 8th floor, Boshell Diabetes Building, 1808 7th Avenue South, Birmingham, Alabama 35233
 map: 33.50490036289856, -86.80231638807041
 description: >- # this means to ignore newlines until "baseurl:"
-  Reed Bratches PhD is a postdoctoral fellow in the School of Nursing at the University of Alabama at Birmingham (UAB)
+  Reed W. R. Bratches PhD is a postdoctoral fellow in the School of Nursing at the University of Alabama at Birmingham (UAB)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rbratches
@@ -55,6 +55,9 @@ education:
 publications: true
 page_excerpts: true
 show_excerpts: true
+
+custom_footer: <p><i class="fa-solid fa-car-side"></i> Looking for my substack? Check out <a  class="text-decoration-none" href="https://thedriversbriefing.substack.com/">the Driver's Briefing.</a></p>
+
 
 # Build settings
 theme: minima

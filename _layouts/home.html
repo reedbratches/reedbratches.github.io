@@ -89,7 +89,7 @@ layout: base
     </div>
 
     {%- if site.publications -%}
-    <div class="row gx-5 bg-light py-5 my-5">
+    <div id="publications" class="row gx-5 bg-light py-5 my-5">
         <div class="col-md-3 justify-content-center">
             <h1 class="mb-3 lh-base">Selected Publications</h1>
         </div>
@@ -98,7 +98,7 @@ layout: base
             <ul class="list-unstyled">
             {% for publication in site.pages %}
             {%- if publication.selected -%}
-            <li>
+            <li class="mb-5">
                 <h2>
                 <a class="text-decoration-none fw-bold" href="{{ publication.url | relative_url }}">
                     {{ publication.title | escape }}
@@ -122,7 +122,7 @@ layout: base
 
     {% assign posts = site.posts %}
     {%- if posts.size > 0 -%}
-    <div class="row gx-5 py-5 my-5">
+    <div id="posts" class="row gx-5 py-5 my-5">
         <div class="col-md-3 justify-content-center">
             <h1 class="mb-3 lh-base">Recent Posts</h1>
         </div>

@@ -7,6 +7,9 @@
             <a  class="text-decoration-none" href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
                 <i class="fa-solid fa-rss"></i> Subscribe
             </a>
+            {%- if site.custom_footer -%}
+                {{ site.custom_footer }}
+            {%- endif -%}
           </p>
           <p>Powered by <a class="text-decoration-none" href="http://jekyllrb.com">Jekyll</a> and <a class="text-decoration-none" href="https://docs.github.com/en/pages">Github Pages</a></p>
       </div>

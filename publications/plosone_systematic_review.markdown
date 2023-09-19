@@ -1,6 +1,4 @@
 ---
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: "Supporting communication of visit information to informal caregivers: A systematic review"
 description: "When caregivers cannot attend the clinic visit for the person they provide care for, patients are the predominant source of clinic visit information; however, poor patient recall inhibits the quality of information shared, resulting in poor caregiver preparedness and contributing to caregiver morbidity. Technological solutions exist to sharing clinic visit information, but their effectiveness is unclear."
