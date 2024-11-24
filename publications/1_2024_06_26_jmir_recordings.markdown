@@ -4,7 +4,7 @@ title: "The Feasibility and Acceptability of Sharing Video Recordings of Amyotro
 description: "Multidisciplinary clinics (MDCs) provide benefits to patients with amyotrophic lateral sclerosis (ALS) and their caregivers, but MDC visits are information-heavy and can last 4 hours, with patients and caregivers meeting with multiple specialists within each MDC visit. There are questions about the effectiveness of current methods of sharing information from MDCs with patients. Video recordings are a promising new method of sharing information that may allow patients and caregivers to revisit the MDC and remind them of clinical recommendations and conversations."
 authors: Reed W R Bratches;  Jeffrey Cohen;  Elizabeth Carpenter-Song;  Lisa Mistler;  Paul J Barr
 publication: JMIR Formative Research
-date: Sep 1, 2023
+date: June 26, 2024
 tags: [feasibility, acceptability, amyotrophic lateral sclerosis, digital intervention, ALS, video recording]
 selected: true
 ---
@@ -15,7 +15,7 @@ _Reed W R Bratches;  Jeffrey Cohen;  Elizabeth Carpenter-Song;  Lisa Mistler;  P
 <br>
 ###### JMIR Formative Research
 
-###### Date: Sep 1, 2023
+###### Date: Jun 26, 2024
 
 ###### Link: [https://formative.jmir.org/](https://formative.jmir.org/2024/1/e57519)
 <br>
