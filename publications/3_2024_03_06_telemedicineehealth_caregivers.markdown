@@ -4,7 +4,7 @@ title: "Family Caregiver Comfort with Telehealth Technologies: Differences by Ra
 description: "Telehealth has seen widespread use since the onset of the COVID-19 pandemic, and 82% patients required assistance in accessing their telehealth appointments. This assistance commonly comes from a family caregiver who may or may not be comfortable using the technologies associated with telehealth. The objective of our study was to analyze a demographically representative survey of U.S. family caregivers to understand the level of comfort using telehealth technologies among family caregivers."
 authors: Reed W R Bratches, Noah Z Freundlich, J Nicholas Dionne-Odom, A James O&#39;Malley, Paul J Barr
 publication: Telemedicine and e-Health
-date: Sep 1, 2023
+date: Mar 6, 2024
 tags: [telehealth access, telemedicine technologies, family caregivers]
 selected: true
 ---
@@ -15,7 +15,7 @@ _Reed W.R. Bratches, Wambui Onsando, Frank Puga, J. Nicholas Odom, and Paul J. B
 <br>
 ###### Telemedicine and e-Health
 
-###### Date: Sep 1, 2023
+###### Date: March 6, 2024
 
 ###### Link: [https://www.liebertpub.com/](https://doi.org/10.1089/tmj.2023.0314)
 <br>

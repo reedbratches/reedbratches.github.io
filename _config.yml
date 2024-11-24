@@ -20,26 +20,30 @@
 
 title: Reed W. R. Bratches
 title_with_suffix: Reed W. R. Bratches, PhD
-subtitle_1: Postdoctoral Fellow, School of Nursing
+subtitle_1: Assistant Professor, School of Nursing
 subtitle_2: University of Alabama at Birmingham (UAB)
 # subtitle_3:
 email: ReedB@uab.edu
 # phone: 
-address: 8th floor, Boshell Diabetes Building, 1808 7th Avenue South, Birmingham, Alabama 35233
-map: 33.50490036289856, -86.80231638807041
+address: 1701 University Blvd, Birmingham, AL 35294
+map: 33.50270996672542, -86.80273572932231
 description: >- # this means to ignore newlines until "baseurl:"
-  Reed W. R. Bratches PhD is a postdoctoral fellow in the School of Nursing at the University of Alabama at Birmingham (UAB)
+  Reed Bratches is an Assistant Professor in the School of Nursing at the University of Alabama at Birmingham (UAB)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.reedbratches.com/" # the base hostname & protocol for your site, e.g. http://example.com
+author: rbratches
+twitter:
+  username: rbratches
+  card: summary
 twitter_username: rbratches
 github_username:  reedbratches
 googlescholar_username: GCc4ebIAAAAJ&hl
 researchgate_username: Reed-W-R-Bratches-2198529957
 orcid_username: 0000-0001-9446-7098
-cv_pdf: /assets/pdfs/BRATCHES_CV_9_8.pdf
+cv_pdf: /assets/pdfs/BRATCHES_CV.pdf
 profile_img: /assets/img/reed.png
 biography_title: Biography
-interests: [Family Caregivers, Persons Living with Dementia, Medication Refusals, Care-Resistant Behavior]
+interests: [Family Caregivers, Persons Living with Dementia, Medication Refusals, Medication Management, Medication Adherence, Care-Resistant Behavior]
 education: 
 - title: "Postdoctoral Fellow, COERE"
   detail: "University of Alabama at Birmingham"
